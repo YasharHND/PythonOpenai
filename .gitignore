@@ -132,3 +132,5 @@ dmypy.json
 *.iml
 out
 gen
+
+/_play_ground.ipynb

@@ -1,8 +1,8 @@
-from authorized_client import client
+from openai import OpenAI
 
 
 def generate_image(prompt, size="1792x1024"):
-    response = client.images.generate(
+    response = OpenAI().images.generate(
         model="dall-e-3",
         prompt=prompt,
         size=size,

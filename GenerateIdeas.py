@@ -1,10 +1,10 @@
 import json
 
-from authorized_client import client
+from openai import OpenAI
 
 
 def generate_ideas(prompt):
-    response = client.chat.completions.create(
+    response = OpenAI().chat.completions.create(
         model="gpt-3.5-turbo-1106",
         response_format={"type": "json_object"},
         messages=[{
